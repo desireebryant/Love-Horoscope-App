@@ -7,16 +7,45 @@
 //
 
 import UIKit
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
+fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l <= r
+  default:
+    return !(rhs < lhs)
+  }
+}
+
 
 class ViewController: UIViewController {
   
-  @IBAction func dateTextFieldedit(sender: UITextField) {
+  @IBAction func dateTextFieldedit(_ sender: UITextField) {
 
     // Show date picker on load
-    datePickerView.hidden = false
+    datePickerView.isHidden = false
     
     //hide results
-    results.hidden = true
+    results.isHidden = true
     
     // hide keyboard
     dateTextField.inputView = UIView()
@@ -24,26 +53,26 @@ class ViewController: UIViewController {
   }
   
   // Set Date Formatter
-  let dateFormatter = NSDateFormatter()
+  let dateFormatter = DateFormatter()
   
 
-  @IBAction func datePickerAction(sender: AnyObject) {
+  @IBAction func datePickerAction(_ sender: AnyObject) {
     dateFormatter.dateFormat = "MM-dd-yyyy"
-    dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-    let strDate = dateFormatter.stringFromDate(datePickerView.date)
+    dateFormatter.dateStyle = DateFormatter.Style.medium
+    let strDate = dateFormatter.string(from: datePickerView.date)
     dateTextField.text = strDate
   }
   
-  @IBAction func getDateSubmit(sender: UIButton) {
+  @IBAction func getDateSubmit(_ sender: UIButton) {
     
     // Hide date picker on load
-    datePickerView.hidden = true
+    datePickerView.isHidden = true
     
     // Set Date Formatter
-    let dateFormatter = NSDateFormatter()
+    let dateFormatter = DateFormatter()
 
     dateFormatter.dateFormat = "MMdd"
-    let strBday = Int(dateFormatter.stringFromDate(datePickerView.date))
+    let strBday = Int(dateFormatter.string(from: datePickerView.date))
     print(strBday)
     
     // ARIES
@@ -53,7 +82,7 @@ class ViewController: UIViewController {
     if (strBday >= ariesStart && strBday <= ariesEnd) {
       let aries = "Aries\n" + "\n" + "Most compatible:\n" + "Leo and Sagittarius.\n" + "\n" + "Least compatible:\n" + "Cancer, Libra and Capricorn.";
       results.text = aries;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // TAURUS
@@ -63,7 +92,7 @@ class ViewController: UIViewController {
     if (strBday >= taurusStart && strBday <= taurusEnd) {
       let taurus = "Taurus\n" + "\n" + "Most compatible:\n" +  "Virgo and Capricorn.\n" + "\n" + "Least compatible with Aquarius, Leo and Scorpio."
       results.text = taurus;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // GEMINI
@@ -73,7 +102,7 @@ class ViewController: UIViewController {
     if (strBday >= geminiStart && strBday <= geminiEnd) {
       let gemini = "Gemini\n" + "\n" + "Most compatible:\n" + "Libra and Aquarius.\n" + "\n" + "Least compatible:\n" + "Virgo, Sagittarius and Pisces."
       results.text = gemini;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // CANCER
@@ -83,7 +112,7 @@ class ViewController: UIViewController {
     if (strBday >= cancerStart && strBday <= cancerEnd) {
       let cancer = "Cancer\n" + "\n" + "Most compatible:\n" + "Scorpio and Pisces.\n" + "\n" + "Least compatible:\n" + "Aries, Libra and Capricorn."
       results.text = cancer;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // LEO
@@ -93,7 +122,7 @@ class ViewController: UIViewController {
     if (strBday >= leoStart && strBday <= leoEnd) {
       let leo = "Leo\n" + "\n" + "Most compatible:\n" + "Sagittarius and Aries.\n" + "\n" + "Least compatible:\n" + "Scorpio, Aquarius and Taurus."
       results.text = leo;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // VIRGO
@@ -103,7 +132,7 @@ class ViewController: UIViewController {
     if (strBday >= virgoStart && strBday <= virgoEnd) {
       let virgo = "Virgo\n" + "\n" + "Most compatible:\n" + "Capricorn and Taurus.\n" + "\n" + "Least compatible:\n" + "Sagittarius, Pisces and Gemini."
       results.text = virgo;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // LIBRA
@@ -113,7 +142,7 @@ class ViewController: UIViewController {
     if (strBday >= libraStart && strBday <= libraEnd) {
       let libra = "Libra\n" + "\n" + "Most compatible:\n" + "Aquarius and Gemini.\n" + "\n" + "Least compatible:\n" + "Aries, Capricorn and Cancer."
       results.text = libra;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // SCORPIO
@@ -123,7 +152,7 @@ class ViewController: UIViewController {
     if (strBday >= scorpioStart && strBday <= scorpioEnd) {
       let scorpio = "Scorpio\n" + "\n" + "Most compatible:\n" + "Pisces and Cancer.\n" + "\n" + "Least compatible:\n" + "Aquarius, Taurus and Leo."
       results.text = scorpio;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // SAGITTARIUS
@@ -133,7 +162,7 @@ class ViewController: UIViewController {
     if (strBday >= sagittariusStart && strBday <= sagittariusEnd) {
       let sagittarius = "Sagittarius\n" + "\n" + "Most compatible:\n" + "Aries and Leo.\n" + "\n" + "Least compatible:\n" + "Pisces, Gemini and Virgo."
       results.text = sagittarius;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // CAPRICORN
@@ -143,7 +172,7 @@ class ViewController: UIViewController {
     if ((strBday >= capricornStart && strBday <= 1231) || (strBday >= 0101 && strBday <= capricornEnd)) {
       let capricorn = "Capricorn\n" + "\n" + "Most compatible:\n" + "Virgo and Taurus.\n" + "\n" + "Least compatible:\n" + "Aries, Cancer and Libra."
       results.text = capricorn;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // AQUARIUS
@@ -153,7 +182,7 @@ class ViewController: UIViewController {
     if (strBday >= aquariusStart && strBday <= aquariusEnd) {
       let aquarius = "Aquarius\n" + "\n" + "Most compatible:\n" + "Gemini and Libra.\n" + "\n" + "Least compatible:\n" + "Taurus, Leo and Scorpio."
       results.text = aquarius;
-      results.hidden = false
+      results.isHidden = false
     }
     
     // PISCES
@@ -163,7 +192,7 @@ class ViewController: UIViewController {
     if (strBday >= piscesStart && strBday <= piscesEnd) {
       let pisces = "Pisces\n" + "\n" + "Most compatible:\n" + "Scorpio and Cancer.\n" + "\n" + "Least compatible:\n" + "Gemini, Virgo, and Sagittarius."
       results.text = pisces;
-      results.hidden = false
+      results.isHidden = false
     }
 
   }
@@ -178,21 +207,21 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
 
     // Override background color - simulator bug
-    self.view.backgroundColor = UIColor.whiteColor()
+    self.view.backgroundColor = UIColor.white
     
     // Date Picker: Month, Day, Year
-    datePickerView.datePickerMode = UIDatePickerMode.Date
+    datePickerView.datePickerMode = UIDatePickerMode.date
     
     // Hide date picker on load
-    datePickerView.hidden = true
+    datePickerView.isHidden = true
     
     // text input padding
     let spacerView = UIView(frame:CGRect(x:0, y:0, width:10, height:10))
-    dateTextField.leftViewMode = UITextFieldViewMode.Always
+    dateTextField.leftViewMode = UITextFieldViewMode.always
     dateTextField.leftView = spacerView
     
     // invisible cursor
-    dateTextField.tintColor = UIColor.clearColor()
+    dateTextField.tintColor = UIColor.clear
     
 
   }
