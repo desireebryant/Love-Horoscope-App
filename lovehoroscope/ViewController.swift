@@ -38,6 +38,8 @@ fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 class ViewController: UIViewController {
+
+/*
   
   @IBAction func dateTextFieldedit(_ sender: UITextField) {
 
@@ -73,7 +75,7 @@ class ViewController: UIViewController {
 
     dateFormatter.dateFormat = "MMdd"
     let strBday = Int(dateFormatter.string(from: datePickerView.date))
-    print(strBday)
+    print(strBday!)
     
     // ARIES
     let ariesStart: Int = 321;
@@ -196,16 +198,20 @@ class ViewController: UIViewController {
     }
 
   }
-  
+
   @IBOutlet weak var results: UILabel!
   @IBOutlet weak var dateTextField: UITextField!
   @IBOutlet weak var datePickerView: UIDatePicker!
+
+
+ */
   
   override func viewDidLoad() {
     
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
 
+/*
     // Override background color - simulator bug
     self.view.backgroundColor = UIColor.white
     
@@ -223,14 +229,13 @@ class ViewController: UIViewController {
     // invisible cursor
     dateTextField.tintColor = UIColor.clear
     
-
-  }
+*/
+    
+}
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
+
 }
-
-

@@ -57,8 +57,8 @@
 				7A0ADEB41C66287300DC1C19 /* AppDelegate.swift */,
 				7A0ADEB61C66287300DC1C19 /* ViewController.swift */,
 				7A0ADEB81C66287300DC1C19 /* Main.storyboard */,
-				7A0ADEBB1C66287300DC1C19 /* Assets.xcassets */,
 				7A0ADEBD1C66287300DC1C19 /* LaunchScreen.storyboard */,
+				7A0ADEBB1C66287300DC1C19 /* Assets.xcassets */,
 				7A0ADEC01C66287300DC1C19 /* Info.plist */,
 			);
 			path = lovehoroscope;

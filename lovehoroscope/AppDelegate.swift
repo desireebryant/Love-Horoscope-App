@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    /*
+    
     // Override point for customization after application launch.
     
     // Set navigation bar tint / background color (Puce - #cc8899)
@@ -25,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Center headline
     
+    */
     
     return true
   }

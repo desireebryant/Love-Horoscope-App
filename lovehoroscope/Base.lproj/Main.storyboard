@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="e1f-Ab-9q1">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="e1f-Ab-9q1">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Love Horoscope-->
@@ -15,101 +19,36 @@
                         <viewControllerLayoutGuide type="bottom" id="qfH-u1-lop"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="18" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-7t-urc">
-                                <rect key="frame" x="25" y="296" width="178" height="48"/>
-                                <color key="tintColor" red="0.0" green="0.19215686269999999" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="gTa-Pe-YgN"/>
-                                    <constraint firstAttribute="width" constant="178" id="loA-IP-PNJ"/>
-                                </constraints>
-                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="dateTextFieldedit:" destination="BYZ-38-t0r" eventType="touchDown" id="qqm-Xo-Oz7"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="Enter Birthday" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-Vx-CbX">
-                                <rect key="frame" x="25" y="256" width="140" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ft8-kU-Ni6"/>
-                                    <constraint firstAttribute="width" constant="140" id="wec-4I-cI1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYr-xA-bYH">
-                                <rect key="frame" x="223" y="296" width="72" height="48"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.53333333333333333" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="getDateSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QlQ-Fc-8Bq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQS-Ka-kx7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQS-Ka-kx7">
                                 <rect key="frame" x="16" y="336" width="288" height="290"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="5gw-Zt-1VE"/>
-                                    <constraint firstAttribute="height" constant="290" id="blm-ub-jkS"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="sCo-vB-g1b"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Love Horoscope" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-Sq-vx2">
-                                <rect key="frame" x="25" y="80" width="270" height="154"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="154" id="3T8-00-eWc"/>
-                                    <constraint firstAttribute="width" constant="270" id="4Lo-PO-6Fw"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="80" width="288" height="143.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
-                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vFU-8R-5ef">
-                                <rect key="frame" x="-47" y="352" width="414" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="481853069.92410302">
-                                    <!--2016-04-09 00:04:29 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kk7-2o-5aJ"/>
-                                </connections>
-                            </datePicker>
                         </subviews>
-                        <color key="tintColor" red="0.0" green="0.19215686269999999" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.19215686269999999" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="top" secondItem="0pY-hJ-grq" secondAttribute="bottom" constant="16" id="0II-49-q75"/>
-                            <constraint firstItem="fN8-7t-urc" firstAttribute="top" secondItem="pdV-Vx-CbX" secondAttribute="bottom" constant="10" id="0fq-xc-iMe"/>
-                            <constraint firstItem="dYr-xA-bYH" firstAttribute="leading" secondItem="fN8-7t-urc" secondAttribute="trailing" constant="20" id="4ky-D5-NRj"/>
-                            <constraint firstItem="vFU-8R-5ef" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-63" id="4wG-Hn-FdR"/>
-                            <constraint firstItem="pdV-Vx-CbX" firstAttribute="leading" secondItem="aGj-Sq-vx2" secondAttribute="leading" id="7OD-tJ-Vxu"/>
-                            <constraint firstItem="vFU-8R-5ef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80N-wD-e5R"/>
-                            <constraint firstItem="vFU-8R-5ef" firstAttribute="top" secondItem="fN8-7t-urc" secondAttribute="bottom" constant="8" symbolic="YES" id="Gge-Ht-47z"/>
-                            <constraint firstItem="dYr-xA-bYH" firstAttribute="trailing" secondItem="aGj-Sq-vx2" secondAttribute="trailing" id="Hp8-ay-brz"/>
-                            <constraint firstItem="fN8-7t-urc" firstAttribute="leading" secondItem="pdV-Vx-CbX" secondAttribute="leading" id="KTG-Qy-gpW"/>
-                            <constraint firstItem="dYr-xA-bYH" firstAttribute="bottom" secondItem="fN8-7t-urc" secondAttribute="bottom" id="LWL-WP-K7z"/>
-                            <constraint firstItem="dYr-xA-bYH" firstAttribute="top" secondItem="fN8-7t-urc" secondAttribute="top" id="ge4-MI-vHZ"/>
-                            <constraint firstItem="pdV-Vx-CbX" firstAttribute="top" secondItem="aGj-Sq-vx2" secondAttribute="bottom" constant="22" id="pkh-nl-zuX"/>
-                            <constraint firstItem="eQS-Ka-kx7" firstAttribute="centerX" secondItem="aGj-Sq-vx2" secondAttribute="centerX" id="qvd-d8-HVg"/>
-                            <constraint firstItem="eQS-Ka-kx7" firstAttribute="top" secondItem="pdV-Vx-CbX" secondAttribute="bottom" constant="50" id="r21-MK-32I"/>
-                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xvv-Bf-NKI"/>
+                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="62u-8h-bmM"/>
+                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q4e-E1-dZN"/>
+                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="avw-55-Ubs"/>
+                            <constraint firstItem="aGj-Sq-vx2" firstAttribute="top" secondItem="0pY-hJ-grq" secondAttribute="bottom" constant="16" id="u23-CB-bKh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Love Horoscope" id="gVa-mI-DmL"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="Results" destination="eQS-Ka-kx7" id="kiT-P2-aT4"/>
-                        <outlet property="datePickerView" destination="vFU-8R-5ef" id="wEv-Bl-1OX"/>
-                        <outlet property="dateTextField" destination="fN8-7t-urc" id="Tlm-0f-8Db"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,4 +74,9 @@
             <point key="canvasLocation" x="-86.400000000000006" y="37.866666666666667"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>
