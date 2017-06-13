@@ -7,38 +7,9 @@
 //
 
 import UIKit
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l < r
-  case (nil, _?):
-    return true
-  default:
-    return false
-  }
-}
-
-fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l >= r
-  default:
-    return !(lhs < rhs)
-  }
-}
-
-fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l <= r
-  default:
-    return !(rhs < lhs)
-  }
-}
-
 
 class ViewController: UIViewController {
-  
+ 
   @IBAction func dateTextFieldedit(_ sender: UITextField) {
 
     // Show date picker on load
@@ -62,9 +33,9 @@ class ViewController: UIViewController {
     let strDate = dateFormatter.string(from: datePickerView.date)
     dateTextField.text = strDate
   }
-  
+ 
   @IBAction func getDateSubmit(_ sender: UIButton) {
-    
+  
     // Hide date picker on load
     datePickerView.isHidden = true
     
@@ -73,13 +44,13 @@ class ViewController: UIViewController {
 
     dateFormatter.dateFormat = "MMdd"
     let strBday = Int(dateFormatter.string(from: datePickerView.date))
-    print(strBday)
+    print(strBday!)
     
     // ARIES
     let ariesStart: Int = 321;
     let ariesEnd: Int = 421;
     
-    if (strBday >= ariesStart && strBday <= ariesEnd) {
+    if (strBday! >= ariesStart && strBday! <= ariesEnd) {
       let aries = "Aries\n" + "\n" + "Most compatible:\n" + "Leo and Sagittarius.\n" + "\n" + "Least compatible:\n" + "Cancer, Libra and Capricorn.";
       results.text = aries;
       results.isHidden = false
@@ -89,7 +60,7 @@ class ViewController: UIViewController {
     let taurusStart: Int = 0420;
     let taurusEnd: Int = 0520;
     
-    if (strBday >= taurusStart && strBday <= taurusEnd) {
+    if (strBday! >= taurusStart && strBday! <= taurusEnd) {
       let taurus = "Taurus\n" + "\n" + "Most compatible:\n" +  "Virgo and Capricorn.\n" + "\n" + "Least compatible with Aquarius, Leo and Scorpio."
       results.text = taurus;
       results.isHidden = false
@@ -99,7 +70,7 @@ class ViewController: UIViewController {
     let geminiStart: Int = 0521;
     let geminiEnd: Int = 0620;
     
-    if (strBday >= geminiStart && strBday <= geminiEnd) {
+    if (strBday! >= geminiStart && strBday! <= geminiEnd) {
       let gemini = "Gemini\n" + "\n" + "Most compatible:\n" + "Libra and Aquarius.\n" + "\n" + "Least compatible:\n" + "Virgo, Sagittarius and Pisces."
       results.text = gemini;
       results.isHidden = false
@@ -109,7 +80,7 @@ class ViewController: UIViewController {
     let cancerStart: Int = 0621;
     let cancerEnd: Int = 0722;
     
-    if (strBday >= cancerStart && strBday <= cancerEnd) {
+    if (strBday! >= cancerStart && strBday! <= cancerEnd) {
       let cancer = "Cancer\n" + "\n" + "Most compatible:\n" + "Scorpio and Pisces.\n" + "\n" + "Least compatible:\n" + "Aries, Libra and Capricorn."
       results.text = cancer;
       results.isHidden = false
@@ -119,7 +90,7 @@ class ViewController: UIViewController {
     let leoStart: Int = 0723;
     let leoEnd: Int = 0822;
     
-    if (strBday >= leoStart && strBday <= leoEnd) {
+    if (strBday! >= leoStart && strBday! <= leoEnd) {
       let leo = "Leo\n" + "\n" + "Most compatible:\n" + "Sagittarius and Aries.\n" + "\n" + "Least compatible:\n" + "Scorpio, Aquarius and Taurus."
       results.text = leo;
       results.isHidden = false
@@ -129,7 +100,7 @@ class ViewController: UIViewController {
     let virgoStart: Int = 0823;
     let virgoEnd: Int = 0922;
     
-    if (strBday >= virgoStart && strBday <= virgoEnd) {
+    if (strBday! >= virgoStart && strBday! <= virgoEnd) {
       let virgo = "Virgo\n" + "\n" + "Most compatible:\n" + "Capricorn and Taurus.\n" + "\n" + "Least compatible:\n" + "Sagittarius, Pisces and Gemini."
       results.text = virgo;
       results.isHidden = false
@@ -139,7 +110,7 @@ class ViewController: UIViewController {
     let libraStart: Int = 0923;
     let libraEnd: Int = 1022;
     
-    if (strBday >= libraStart && strBday <= libraEnd) {
+    if (strBday! >= libraStart && strBday! <= libraEnd) {
       let libra = "Libra\n" + "\n" + "Most compatible:\n" + "Aquarius and Gemini.\n" + "\n" + "Least compatible:\n" + "Aries, Capricorn and Cancer."
       results.text = libra;
       results.isHidden = false
@@ -149,7 +120,7 @@ class ViewController: UIViewController {
     let scorpioStart: Int = 1023;
     let scorpioEnd: Int = 1121;
     
-    if (strBday >= scorpioStart && strBday <= scorpioEnd) {
+    if (strBday! >= scorpioStart && strBday! <= scorpioEnd) {
       let scorpio = "Scorpio\n" + "\n" + "Most compatible:\n" + "Pisces and Cancer.\n" + "\n" + "Least compatible:\n" + "Aquarius, Taurus and Leo."
       results.text = scorpio;
       results.isHidden = false
@@ -159,7 +130,7 @@ class ViewController: UIViewController {
     let sagittariusStart: Int = 1122;
     let sagittariusEnd: Int = 1221;
     
-    if (strBday >= sagittariusStart && strBday <= sagittariusEnd) {
+    if (strBday! >= sagittariusStart && strBday! <= sagittariusEnd) {
       let sagittarius = "Sagittarius\n" + "\n" + "Most compatible:\n" + "Aries and Leo.\n" + "\n" + "Least compatible:\n" + "Pisces, Gemini and Virgo."
       results.text = sagittarius;
       results.isHidden = false
@@ -169,7 +140,7 @@ class ViewController: UIViewController {
     let capricornStart: Int = 1222;
     let capricornEnd: Int = 0119;
 
-    if ((strBday >= capricornStart && strBday <= 1231) || (strBday >= 0101 && strBday <= capricornEnd)) {
+    if ((strBday! >= capricornStart && strBday! <= 1231) || (strBday! >= 0101 && strBday! <= capricornEnd)) {
       let capricorn = "Capricorn\n" + "\n" + "Most compatible:\n" + "Virgo and Taurus.\n" + "\n" + "Least compatible:\n" + "Aries, Cancer and Libra."
       results.text = capricorn;
       results.isHidden = false
@@ -179,7 +150,7 @@ class ViewController: UIViewController {
     let aquariusStart: Int = 0120;
     let aquariusEnd: Int = 0219;
     
-    if (strBday >= aquariusStart && strBday <= aquariusEnd) {
+    if (strBday! >= aquariusStart && strBday! <= aquariusEnd) {
       let aquarius = "Aquarius\n" + "\n" + "Most compatible:\n" + "Gemini and Libra.\n" + "\n" + "Least compatible:\n" + "Taurus, Leo and Scorpio."
       results.text = aquarius;
       results.isHidden = false
@@ -189,7 +160,7 @@ class ViewController: UIViewController {
     let piscesStart: Int = 0220;
     let piscesEnd: Int = 0320;
     
-    if (strBday >= piscesStart && strBday <= piscesEnd) {
+    if (strBday! >= piscesStart && strBday! <= piscesEnd) {
       let pisces = "Pisces\n" + "\n" + "Most compatible:\n" + "Scorpio and Cancer.\n" + "\n" + "Least compatible:\n" + "Gemini, Virgo, and Sagittarius."
       results.text = pisces;
       results.isHidden = false
@@ -222,7 +193,6 @@ class ViewController: UIViewController {
     
     // invisible cursor
     dateTextField.tintColor = UIColor.clear
-    
 
   }
   

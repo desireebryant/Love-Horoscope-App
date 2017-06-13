@@ -16,16 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
-    // Set navigation bar tint / background color (Puce - #cc8899)
-    UINavigationBar.appearance().barTintColor = UIColor(red:204/225, green:136/255, blue:153/255, alpha:1.0)
-    // Set navigation bar text / title color
+    // INDIGO - #4B0082
+    UINavigationBar.appearance().barTintColor = UIColor(red: 75/255, green: 0/255, blue: 130/255, alpha: 1.0)
     UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-    //Set Status bar color to light
     UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-    
-    // Center headline
-    
-    
+ 
     return true
   }
 

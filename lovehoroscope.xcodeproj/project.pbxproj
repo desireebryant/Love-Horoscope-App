@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A048D171EEF43E300811B04 /* aries.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D161EEF43E300811B04 /* aries.json */; };
+		7A048D191EEF492900811B04 /* taurus.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D181EEF492900811B04 /* taurus.json */; };
+		7A048D1B1EEF49B200811B04 /* gemini.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D1A1EEF49B200811B04 /* gemini.json */; };
+		7A048D1D1EEF4A0300811B04 /* cancer.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D1C1EEF4A0300811B04 /* cancer.json */; };
+		7A048D1F1EEF4A4F00811B04 /* leo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D1E1EEF4A4F00811B04 /* leo.json */; };
+		7A048D211EEF4BAE00811B04 /* virgo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D201EEF4BAE00811B04 /* virgo.json */; };
+		7A048D251EF01BB200811B04 /* libra.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D241EF01BB200811B04 /* libra.json */; };
+		7A048D271EF01CAD00811B04 /* scorpio.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D261EF01CAD00811B04 /* scorpio.json */; };
+		7A048D291EF01D0100811B04 /* sagittarius.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D281EF01D0100811B04 /* sagittarius.json */; };
+		7A048D2B1EF01F8500811B04 /* capricorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D2A1EF01F8500811B04 /* capricorn.json */; };
+		7A048D2D1EF01FCE00811B04 /* aquarius.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D2C1EF01FCE00811B04 /* aquarius.json */; };
+		7A048D2F1EF0202600811B04 /* pisces.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A048D2E1EF0202600811B04 /* pisces.json */; };
 		7A0ADEB51C66287300DC1C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADEB41C66287300DC1C19 /* AppDelegate.swift */; };
 		7A0ADEB71C66287300DC1C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADEB61C66287300DC1C19 /* ViewController.swift */; };
 		7A0ADEBA1C66287300DC1C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADEB81C66287300DC1C19 /* Main.storyboard */; };
@@ -15,6 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A048D161EEF43E300811B04 /* aries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = aries.json; sourceTree = "<group>"; };
+		7A048D181EEF492900811B04 /* taurus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taurus.json; sourceTree = "<group>"; };
+		7A048D1A1EEF49B200811B04 /* gemini.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gemini.json; sourceTree = "<group>"; };
+		7A048D1C1EEF4A0300811B04 /* cancer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cancer.json; sourceTree = "<group>"; };
+		7A048D1E1EEF4A4F00811B04 /* leo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leo.json; sourceTree = "<group>"; };
+		7A048D201EEF4BAE00811B04 /* virgo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = virgo.json; sourceTree = "<group>"; };
+		7A048D241EF01BB200811B04 /* libra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = libra.json; sourceTree = "<group>"; };
+		7A048D261EF01CAD00811B04 /* scorpio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scorpio.json; sourceTree = "<group>"; };
+		7A048D281EF01D0100811B04 /* sagittarius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sagittarius.json; sourceTree = "<group>"; };
+		7A048D2A1EF01F8500811B04 /* capricorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capricorn.json; sourceTree = "<group>"; };
+		7A048D2C1EF01FCE00811B04 /* aquarius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = aquarius.json; sourceTree = "<group>"; };
+		7A048D2E1EF0202600811B04 /* pisces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pisces.json; sourceTree = "<group>"; };
 		7A0ADEB11C66287300DC1C19 /* lovehoroscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lovehoroscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0ADEB41C66287300DC1C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A0ADEB61C66287300DC1C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +59,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A048D121EEF323100811B04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A0ADEB41C66287300DC1C19 /* AppDelegate.swift */,
+				7A0ADEC01C66287300DC1C19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A048D131EEF326300811B04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A048D151EEF439400811B04 /* Signs */,
+				7A0ADEBB1C66287300DC1C19 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A048D141EEF328100811B04 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7A0ADEB81C66287300DC1C19 /* Main.storyboard */,
+				7A0ADEBD1C66287300DC1C19 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7A048D151EEF439400811B04 /* Signs */ = {
+			isa = PBXGroup;
+			children = (
+				7A048D161EEF43E300811B04 /* aries.json */,
+				7A048D181EEF492900811B04 /* taurus.json */,
+				7A048D1A1EEF49B200811B04 /* gemini.json */,
+				7A048D1C1EEF4A0300811B04 /* cancer.json */,
+				7A048D1E1EEF4A4F00811B04 /* leo.json */,
+				7A048D201EEF4BAE00811B04 /* virgo.json */,
+				7A048D241EF01BB200811B04 /* libra.json */,
+				7A048D261EF01CAD00811B04 /* scorpio.json */,
+				7A048D281EF01D0100811B04 /* sagittarius.json */,
+				7A048D2A1EF01F8500811B04 /* capricorn.json */,
+				7A048D2C1EF01FCE00811B04 /* aquarius.json */,
+				7A048D2E1EF0202600811B04 /* pisces.json */,
+			);
+			name = Signs;
+			sourceTree = "<group>";
+		};
 		7A0ADEA81C66287300DC1C19 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +124,10 @@
 		7A0ADEB31C66287300DC1C19 /* lovehoroscope */ = {
 			isa = PBXGroup;
 			children = (
-				7A0ADEB41C66287300DC1C19 /* AppDelegate.swift */,
 				7A0ADEB61C66287300DC1C19 /* ViewController.swift */,
-				7A0ADEB81C66287300DC1C19 /* Main.storyboard */,
-				7A0ADEBB1C66287300DC1C19 /* Assets.xcassets */,
-				7A0ADEBD1C66287300DC1C19 /* LaunchScreen.storyboard */,
-				7A0ADEC01C66287300DC1C19 /* Info.plist */,
+				7A048D141EEF328100811B04 /* Storyboards */,
+				7A048D131EEF326300811B04 /* Resources */,
+				7A048D121EEF323100811B04 /* Supporting Files */,
 			);
 			path = lovehoroscope;
 			sourceTree = "<group>";
@@ -124,8 +192,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A048D1F1EEF4A4F00811B04 /* leo.json in Resources */,
 				7A0ADEBF1C66287300DC1C19 /* LaunchScreen.storyboard in Resources */,
+				7A048D1D1EEF4A0300811B04 /* cancer.json in Resources */,
+				7A048D191EEF492900811B04 /* taurus.json in Resources */,
+				7A048D291EF01D0100811B04 /* sagittarius.json in Resources */,
 				7A0ADEBC1C66287300DC1C19 /* Assets.xcassets in Resources */,
+				7A048D2B1EF01F8500811B04 /* capricorn.json in Resources */,
+				7A048D2F1EF0202600811B04 /* pisces.json in Resources */,
+				7A048D171EEF43E300811B04 /* aries.json in Resources */,
+				7A048D2D1EF01FCE00811B04 /* aquarius.json in Resources */,
+				7A048D251EF01BB200811B04 /* libra.json in Resources */,
+				7A048D211EEF4BAE00811B04 /* virgo.json in Resources */,
+				7A048D271EF01CAD00811B04 /* scorpio.json in Resources */,
+				7A048D1B1EEF49B200811B04 /* gemini.json in Resources */,
 				7A0ADEBA1C66287300DC1C19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
